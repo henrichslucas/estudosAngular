@@ -1,0 +1,9 @@
+<mat-card>
+  <ul>
+    <ng-container *ngFor="let user of users" >
+      <li *ngIf="user.role=='admin'">{{user.login}}
+      </li>
+    </ng-container>
+  </ul>
+</mat-card>
+
