@@ -8,8 +8,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { EventComponent } from './event/event.component';
-import { ChildItemComponent } from './event/child-item/child-item.component'
-
+import { ChildItemComponent } from './event/child-item/child-item.component';
+import { ClientsComponent } from './clients/clients.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -17,15 +19,18 @@ import { ChildItemComponent } from './event/child-item/child-item.component'
     InputBindingComponent,
     ClientComponent,
     EventComponent,
-    ChildItemComponent
+    ChildItemComponent,
+    ClientsComponent,
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    MatFormFieldModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
