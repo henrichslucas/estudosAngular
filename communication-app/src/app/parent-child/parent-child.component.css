@@ -1,0 +1,9 @@
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+mat-card {
+  margin: 10px;
+  background-color: grey;
+}
