@@ -1,0 +1,14 @@
+mat-card {
+  margin: 20px;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+p {
+  margin-left: 5px;
+}

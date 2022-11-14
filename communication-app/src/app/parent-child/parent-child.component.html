@@ -1,0 +1,18 @@
+<mat-card>
+  <div class="btnContainer">
+    <button mat-raised-button color="primary" (click)="stopwatch.startClock()">Start</button>
+    <button mat-raised-button color="accent" (click)="stopwatch.stopClock()">Stop</button>
+    <button mat-raised-button color="warn" (click)="stopwatch.resetClock()">Reset</button>
+  </div>
+  <app-timer #stopwatch></app-timer>
+</mat-card>
+
+<mat-card>
+  <div class="btnContainer">
+    <button mat-raised-button color="primary" (click)="startClock()">Start</button>
+    <button mat-raised-button color="accent" (click)="stopClock()">Stop</button>
+    <button mat-raised-button color="warn" (click)="resetClock()">Reset</button>
+  </div>
+  <app-timer #stopwatch2></app-timer>
+</mat-card>
+
