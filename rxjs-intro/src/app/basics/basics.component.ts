@@ -19,8 +19,6 @@ export class BasicsComponent implements OnInit {
 
   ngOnInit(): void {
 
-
-
     //criando observable que conta ate 5
     const myFirstObservable = new Observable(
       (observer: Observer<number>) => {
@@ -40,7 +38,7 @@ export class BasicsComponent implements OnInit {
       error: (err: string) => console.error(err),
       complete: () => console.log('completo'),
     })
-    
+
 
     /*const timerCount = interval(1000);
     timerCount.subscribe({
