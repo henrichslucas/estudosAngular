@@ -5,17 +5,23 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
+import { BasicCreationComponent } from './basic-creation/basic-creation.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { OperatorsComponent } from './operators/operators.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BasicCreationComponent,
+    OperatorsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
